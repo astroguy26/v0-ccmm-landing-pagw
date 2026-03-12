@@ -3,7 +3,7 @@ import { Noto_Sans_TC, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
-import { SiteFooter } from "@/components/footer";
+
 
 const notoSansTC = Noto_Sans_TC({
   subsets: ['latin'],
@@ -62,7 +62,6 @@ export default function RootLayout({
       <body className={`${notoSansTC.variable} ${inter.variable} font-sans antialiased bg-background text-foreground`}>
         <ThemeProvider>
           {children}
-          <SiteFooter />
         </ThemeProvider>
         <Analytics />
       </body>
