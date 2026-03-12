@@ -22,7 +22,7 @@ export function ContactForm() {
 
   if (success) {
     return (
-      <div className="bg-primary/5 border border-primary/30 rounded-xl p-8 text-center">
+      <div className="bg-primary/5 dark:bg-primary/10 border border-primary/30 dark:border-primary/40 rounded-xl p-8 text-center">
         <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center mx-auto mb-4">
           <svg
             viewBox="0 0 24 24"

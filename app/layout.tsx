@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Noto_Sans_TC, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 const notoSansTC = Noto_Sans_TC({
@@ -56,9 +57,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="zh-HK">
+    <html lang="zh-HK" suppressHydrationWarning>
       <body className={`${notoSansTC.variable} ${inter.variable} font-sans antialiased bg-background text-foreground`}>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
         <Analytics />
       </body>
     </html>

@@ -36,7 +36,7 @@ const services = [
 
 export function ServicesOverview() {
   return (
-    <SectionWrapper id="services" className="bg-background">
+    <SectionWrapper id="services" className="bg-background dark:bg-slate-950">
       <div className="text-center mb-12">
         <p className="text-sm font-medium text-primary tracking-widest uppercase mb-3">Our Services</p>
         <h2 className="text-3xl md:text-4xl font-bold text-balance mb-4">專業服務項目</h2>
@@ -50,7 +50,7 @@ export function ServicesOverview() {
           <Link
             key={service.href}
             href={service.href}
-            className="group bg-card rounded-xl overflow-hidden border border-border hover:shadow-lg hover:border-primary/30 transition-all duration-300"
+            className="group bg-card dark:bg-slate-900 rounded-xl overflow-hidden border border-border dark:border-slate-700 hover:shadow-lg hover:border-primary/30 dark:hover:border-primary/40 transition-all duration-300"
           >
             <div className="relative h-48 overflow-hidden">
               <Image

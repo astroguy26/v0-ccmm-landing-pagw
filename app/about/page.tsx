@@ -74,7 +74,7 @@ export default function AboutPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pt-32 pb-16 bg-primary text-primary-foreground">
+        <section className="pt-32 pb-16 bg-primary dark:bg-primary/90 text-primary-foreground">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <p className="text-sm tracking-widest uppercase opacity-70 mb-3">About Us</p>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">關於我們</h1>
@@ -114,15 +114,15 @@ export default function AboutPage() {
         </SectionWrapper>
 
         {/* Values */}
-        <SectionWrapper className="bg-muted/40">
+        <SectionWrapper className="bg-muted/40 dark:bg-slate-900/40">
           <div className="text-center mb-12">
             <p className="text-sm font-medium text-primary tracking-widest uppercase mb-3">Our Values</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">我們的核心價值</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {values.map((v) => (
-              <div key={v.title} className="bg-card rounded-xl p-7 border border-border text-center">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+              <div key={v.title} className="bg-card dark:bg-slate-900 rounded-xl p-7 border border-border dark:border-slate-700 text-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center mx-auto mb-4">
                   <v.icon size={22} className="text-primary" />
                 </div>
                 <h3 className="font-bold text-lg mb-1">{v.title}</h3>
@@ -145,7 +145,7 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {therapists.map((t) => (
-              <article key={t.name} className="bg-card rounded-xl overflow-hidden border border-border shadow-sm">
+              <article key={t.name} className="bg-card dark:bg-slate-900 rounded-xl overflow-hidden border border-border dark:border-slate-700 shadow-sm dark:shadow-md">
                 <div className="relative h-72 overflow-hidden">
                   <Image src={t.image} alt={t.name} fill className="object-cover object-top" />
                 </div>
@@ -172,7 +172,7 @@ export default function AboutPage() {
         </SectionWrapper>
 
         {/* CTA */}
-        <SectionWrapper className="bg-primary text-primary-foreground">
+        <SectionWrapper className="bg-primary dark:bg-primary/90 text-primary-foreground">
           <div className="text-center max-w-xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">與我們的專業團隊見面</h2>
             <p className="opacity-80 leading-relaxed mb-8">

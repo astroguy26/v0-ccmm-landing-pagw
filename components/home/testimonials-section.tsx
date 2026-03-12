@@ -44,7 +44,7 @@ function StarRating({ rating }: { rating: number }) {
 
 export function TestimonialsSection() {
   return (
-    <SectionWrapper className="bg-muted/40">
+    <SectionWrapper className="bg-muted/40 dark:bg-slate-900/40">
       <div className="text-center mb-12">
         <p className="text-sm font-medium text-primary tracking-widest uppercase mb-3">Testimonials</p>
         <h2 className="text-3xl md:text-4xl font-bold text-balance mb-4">患者心聲</h2>
@@ -57,14 +57,14 @@ export function TestimonialsSection() {
         {testimonials.map((t) => (
           <figure
             key={t.name}
-            className="bg-card rounded-xl p-6 border border-border shadow-sm flex flex-col gap-4"
+            className="bg-card dark:bg-slate-900 rounded-xl p-6 border border-border dark:border-slate-700 shadow-sm dark:shadow-lg flex flex-col gap-4"
           >
             <StarRating rating={t.rating} />
             <blockquote className="text-sm text-foreground leading-relaxed flex-1">
               <p>「{t.content}」</p>
             </blockquote>
             <figcaption className="flex items-center gap-3 mt-2">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm shrink-0">
+              <div className="w-10 h-10 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary font-bold text-sm shrink-0">
                 {t.name[0]}
               </div>
               <div>
