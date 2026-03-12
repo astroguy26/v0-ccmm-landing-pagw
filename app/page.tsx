@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/home/hero-section"
 import { ServicesOverview } from "@/components/home/services-overview"
 import { StatsSection } from "@/components/home/stats-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
+import { FAQSection } from "@/components/home/faq-section"
 import { SectionWrapper } from "@/components/ui/section-wrapper"
 import { CTAButton } from "@/components/ui/cta-button"
 
@@ -28,6 +29,7 @@ export default function HomePage() {
         <ServicesOverview />
         <StatsSection />
         <TestimonialsSection />
+        <FAQSection />
 
         {/* CTA Banner */}
         <SectionWrapper className="bg-accent/30">

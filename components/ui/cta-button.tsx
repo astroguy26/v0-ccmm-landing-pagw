@@ -22,10 +22,10 @@ export function CTAButton({
     "inline-flex items-center justify-center gap-2 font-medium rounded-md transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
 
   const variants = {
-    primary: "bg-primary text-primary-foreground hover:opacity-90 shadow-sm",
+    primary: "bg-primary text-primary-foreground hover:opacity-90 shadow-sm dark:shadow-md",
     outline:
-      "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground",
-    whatsapp: "bg-[#25d366] text-white hover:bg-[#20b958] shadow-sm",
+      "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground dark:hover:bg-primary/80",
+    whatsapp: "bg-[#25d366] text-white hover:bg-[#20b958] shadow-sm dark:shadow-md",
   }
 
   const sizes = {
