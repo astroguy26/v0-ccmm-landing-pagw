@@ -75,7 +75,7 @@ export default function Header() {
             <a
               href="tel:+85223886618"
               className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
-              aria-label="致電診所"
+              aria-label="Call clinic"
             >
               <Phone size={14} />
               <span>2388-6618</span>
