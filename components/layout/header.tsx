@@ -82,7 +82,7 @@ export default function Header() {
             </a>
             <Link
               href="/contact"
-              className="bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium hover:bg-clinic-teal-dark transition-colors"
+              className="bg-primary text-primary-foreground px-4 py-2 rounded-md text-sm font-medium hover:opacity-90 transition-colors"
             >
               立即預約
             </Link>
@@ -136,7 +136,7 @@ export default function Header() {
               </a>
               <Link
                 href="/contact"
-                className="bg-primary text-primary-foreground px-4 py-3 rounded-md text-sm font-medium text-center hover:bg-clinic-teal-dark transition-colors"
+                className="bg-primary text-primary-foreground px-4 py-3 rounded-md text-sm font-medium text-center hover:opacity-90 transition-colors"
               >
                 立即預約 Book Now
               </Link>

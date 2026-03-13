@@ -14,7 +14,7 @@ export function HeroSection() {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-clinic-teal-dark/60" />
+        <div className="absolute inset-0 bg-primary/70" />
       </div>
 
       {/* Content */}

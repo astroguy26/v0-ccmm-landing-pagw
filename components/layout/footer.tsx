@@ -23,7 +23,7 @@ const hours = [
 
 export default function Footer() {
   return (
-    <footer className="bg-clinic-teal-dark dark:bg-slate-950 text-primary-foreground">
+    <footer className="bg-muted dark:bg-slate-950 text-foreground dark:text-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div className="lg:col-span-1">
@@ -41,7 +41,7 @@ export default function Footer() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+              className="w-9 h-9 rounded-full bg-primary/10 hover:bg-primary/20 dark:bg-white/10 dark:hover:bg-white/20 flex items-center justify-center transition-colors"
               aria-label="Facebook"
             >
               <Facebook size={16} />
@@ -50,7 +50,7 @@ export default function Footer() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+              className="w-9 h-9 rounded-full bg-primary/10 hover:bg-primary/20 dark:bg-white/10 dark:hover:bg-white/20 flex items-center justify-center transition-colors"
               aria-label="Instagram"
             >
               <Instagram size={16} />
@@ -59,7 +59,7 @@ export default function Footer() {
               href="https://wa.me/85223886618"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+              className="w-9 h-9 rounded-full bg-primary/10 hover:bg-primary/20 dark:bg-white/10 dark:hover:bg-white/20 flex items-center justify-center transition-colors"
               aria-label="WhatsApp"
             >
               <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -136,8 +136,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs opacity-50">
+      <div className="border-t border-border dark:border-white/10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} 張弛肌肉保健 Cheung Chi Muscle Matters. 版權所有。</p>
           <p>香港中環 Central, Hong Kong</p>
         </div>

@@ -4,6 +4,7 @@ import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import { SectionWrapper } from "@/components/ui/section-wrapper"
 import { CTAButton } from "@/components/ui/cta-button"
+import { TeamSection } from "@/components/team/team-section"
 import { Award, GraduationCap, Heart } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -37,20 +38,15 @@ const values = [
   },
 ]
 
-const therapists = [
+const teamMembers = [
   {
     name: "Lewis 張智誠",
     nameEn: "Lewis Cheung",
     title: "物理治療師 · 聯合創辦人",
     titleEn: "Physiotherapist · Co-founder",
     image: "/images/therapist-lewis.jpg",
-    qualifications: [
-      "香港理工大學物理治療學士",
-      "運動物理治療碩士",
-      "香港物理治療師管理委員會註冊",
-      "運動傷患專科認證",
-    ],
-    bio: "Lewis 擁有逾十年物理治療及運動康復經驗，專注於運動傷患及肌肉骨骼問題。曾服務多支本地運動隊伍，對各類運動創傷的評估及治療有豐富經驗。他相信治療師與患者之間的溝通至關重要，致力確保每位患者完全了解自己的狀況及治療方向。",
+    specialty: "專注於運動傷患及肌肉骨骼問題，曾服務多支本地運動隊伍，對各類運動創傷的評估及治療有豐富經驗。",
+    credential: "香港理工大學物理治療學士 · 運動物理治療碩士",
   },
   {
     name: "Raymond 陳祖龍",
@@ -58,13 +54,17 @@ const therapists = [
     title: "物理治療師 · 聯合創辦人",
     titleEn: "Physiotherapist · Co-founder",
     image: "/images/therapist-raymond.jpg",
-    qualifications: [
-      "香港大學物理治療學士",
-      "肌肉骨骼物理治療碩士",
-      "香港物理治療師管理委員會註冊",
-      "術後復康專科認證",
-    ],
-    bio: "Raymond 在慢性痛症管理及術後復康方面擁有豐富專業知識。他相信良好的姿勢是健康的基礎，特別熱衷於幫助都市人解決因長期坐辦公室引起的頸肩腰痛問題。Raymond 以耐心、細心的態度對待每位患者，深受患者信任與愛戴。",
+    specialty: "專注慢性痛症管理及術後復康，特別熱衷於幫助都市人解決因長期坐辦公室引起的頸肩腰痛問題。",
+    credential: "香港大學物理治療學士 · 肌肉骨骼物理治療碩士",
+  },
+  {
+    name: "Cheung 先生",
+    nameEn: "Mr. Cheung",
+    title: "運動治療師",
+    titleEn: "Sports Therapist",
+    image: "/images/therapist-cheung.jpg",
+    specialty: "專注於運動康復訓練及體能提升，協助患者透過針對性運動恢復功能及預防傷患復發。",
+    credential: "運動科學學士 · 認證運動治療師",
   },
 ]
 
@@ -134,42 +134,7 @@ export default function AboutPage() {
         </SectionWrapper>
 
         {/* Team */}
-        <SectionWrapper>
-          <div className="text-center mb-12">
-            <p className="text-sm font-medium text-primary tracking-widest uppercase mb-3">Our Team</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">治療師團隊</h2>
-            <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              認識我們的專業物理治療師
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {therapists.map((t) => (
-              <article key={t.name} className="bg-card dark:bg-slate-900 rounded-xl overflow-hidden border border-border dark:border-slate-700 shadow-sm dark:shadow-md">
-                <div className="relative h-72 overflow-hidden">
-                  <Image src={t.image} alt={t.name} fill className="object-cover object-top" />
-                </div>
-                <div className="p-7">
-                  <h3 className="text-xl font-bold">{t.name}</h3>
-                  <p className="text-sm text-primary font-medium mb-1">{t.nameEn}</p>
-                  <p className="text-sm text-muted-foreground mb-5">{t.title}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-5">{t.bio}</p>
-                  <div>
-                    <h4 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-3">資歷</h4>
-                    <ul className="space-y-2">
-                      {t.qualifications.map((q) => (
-                        <li key={q} className="flex items-center gap-2 text-sm">
-                          <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                          <span>{q}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </SectionWrapper>
+        <TeamSection members={teamMembers} />
 
         {/* CTA */}
         <SectionWrapper className="bg-primary dark:bg-primary/90 text-primary-foreground">
