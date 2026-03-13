@@ -1,22 +1,9 @@
-import Image from "next/image"
 import { CTAButton } from "@/components/ui/cta-button"
 import { ChevronDown } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/hero-bg.jpg"
-          alt="張弛肌肉保健診所"
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-primary/70" />
-      </div>
-
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary">
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center text-white pt-20">
         <p className="text-sm md:text-base tracking-[0.3em] uppercase opacity-80 mb-4 font-medium">
