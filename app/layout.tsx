@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Noto_Sans_TC, Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 
@@ -58,11 +57,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="zh-HK" suppressHydrationWarning>
+    <html lang="zh-HK">
       <body className={`${notoSansTC.variable} ${inter.variable} font-sans antialiased bg-background text-foreground`}>
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        {children}
         <Analytics />
       </body>
     </html>

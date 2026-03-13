@@ -5,7 +5,6 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, X, Phone } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { ThemeToggle } from "@/components/theme-toggle"
 
 const navLinks = [
   { href: "/", label: "首頁", labelEn: "Home" },
@@ -35,8 +34,8 @@ export default function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-white/95 dark:bg-background/95 backdrop-blur-md shadow-sm border-b border-border"
-          : "bg-white/80 dark:bg-background/80 backdrop-blur-sm"
+          ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-border"
+          : "bg-white/80 backdrop-blur-sm"
       )}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -71,7 +70,6 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-2">
-            <ThemeToggle />
             <a
               href="tel:+85223886618"
               className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -103,8 +101,8 @@ export default function Header() {
       {/* Mobile menu */}
       {isOpen && (
         <nav
-          className="md:hidden bg-white dark:bg-background border-t border-border"
-          aria-label="手機導航"
+          className="md:hidden bg-white border-t border-border"
+          aria-label="Mobile navigation"
         >
           <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
@@ -123,10 +121,6 @@ export default function Header() {
               </Link>
             ))}
             <div className="mt-3 pt-3 border-t border-border flex flex-col gap-2">
-              <div className="flex items-center justify-between px-4 py-2">
-                <span className="text-sm text-muted-foreground">主題</span>
-                <ThemeToggle />
-              </div>
               <a
                 href="tel:+85223886618"
                 className="flex items-center gap-2 px-4 py-3 text-sm text-muted-foreground hover:text-primary transition-colors"
