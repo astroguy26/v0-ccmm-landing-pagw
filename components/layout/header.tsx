@@ -35,8 +35,8 @@ export default function Header() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         scrolled
-          ? "bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-sm border-b border-border"
-          : "bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm"
+          ? "bg-white/95 dark:bg-background/95 backdrop-blur-md shadow-sm border-b border-border"
+          : "bg-white/80 dark:bg-background/80 backdrop-blur-sm"
       )}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -103,7 +103,7 @@ export default function Header() {
       {/* Mobile menu */}
       {isOpen && (
         <nav
-          className="md:hidden bg-white dark:bg-slate-900 border-t border-border"
+          className="md:hidden bg-white dark:bg-background border-t border-border"
           aria-label="手機導航"
         >
           <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-1">

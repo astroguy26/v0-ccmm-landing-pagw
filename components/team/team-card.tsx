@@ -16,7 +16,7 @@ interface TeamCardProps {
 
 export function TeamCard({ member }: TeamCardProps) {
   return (
-    <article className="group bg-card dark:bg-slate-900 rounded-xl overflow-hidden border border-border dark:border-slate-700 shadow-sm hover:shadow-lg dark:shadow-md dark:hover:shadow-xl transition-all duration-300 hover:border-primary/30 dark:hover:border-primary/40">
+    <article className="group bg-card rounded-xl overflow-hidden border border-border shadow-sm hover:shadow-lg transition-all duration-300 hover:border-primary/30">
       <div className="relative h-64 overflow-hidden bg-muted">
         <Image
           src={member.image}
@@ -33,7 +33,7 @@ export function TeamCard({ member }: TeamCardProps) {
         <p className="text-sm text-muted-foreground mb-3">{member.title}</p>
         <p className="text-sm text-muted-foreground leading-relaxed mb-3">{member.specialty}</p>
         {member.credential && (
-          <p className="text-xs text-primary/80 font-medium border-t border-border dark:border-slate-700 pt-3 mt-3">
+          <p className="text-xs text-primary/80 font-medium border-t border-border pt-3 mt-3">
             {member.credential}
           </p>
         )}

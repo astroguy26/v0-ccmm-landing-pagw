@@ -2,7 +2,7 @@ import { SectionWrapper } from "@/components/ui/section-wrapper"
 
 export function PhilosophySection() {
   return (
-    <SectionWrapper className="bg-card dark:bg-slate-900/50">
+    <SectionWrapper className="bg-card">
       <div className="text-center mb-12">
         <p className="text-sm font-medium text-primary tracking-widest uppercase mb-3">
           Our Philosophy
@@ -17,9 +17,9 @@ export function PhilosophySection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {/* 張 */}
-        <div className="bg-background dark:bg-slate-800 rounded-2xl p-8 border border-border dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+        <div className="bg-background rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-16 h-16 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
               <span className="text-3xl font-bold text-primary">張</span>
             </div>
             <div>
@@ -52,9 +52,9 @@ export function PhilosophySection() {
         </div>
 
         {/* 弛 */}
-        <div className="bg-background dark:bg-slate-800 rounded-2xl p-8 border border-border dark:border-slate-700 shadow-sm hover:shadow-md transition-shadow">
+        <div className="bg-background rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow">
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-16 h-16 rounded-full bg-accent/50 dark:bg-accent/30 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full bg-accent/50 flex items-center justify-center">
               <span className="text-3xl font-bold text-primary">弛</span>
             </div>
             <div>
