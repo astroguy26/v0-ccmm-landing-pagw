@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import { HeroSection } from "@/components/home/hero-section"
+import { PhilosophySection } from "@/components/home/philosophy-section"
 import { ServicesOverview } from "@/components/home/services-overview"
 import { StatsSection } from "@/components/home/stats-section"
 import { TestimonialsSection } from "@/components/home/testimonials-section"
@@ -26,6 +27,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <PhilosophySection />
         <ServicesOverview />
         <StatsSection />
         <TestimonialsSection />

@@ -59,7 +59,7 @@ export function ServicesOverview() {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-clinic-teal-dark/20 group-hover:bg-clinic-teal-dark/10 transition-colors" />
+              <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors" />
             </div>
             <div className="p-5">
               <h3 className="font-bold text-foreground mb-1">{service.title}</h3>

@@ -5,86 +5,86 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Brand: deep teal primary, warm off-white background, slate neutrals */
-  --background: oklch(0.98 0.004 200);
-  --foreground: oklch(0.18 0.02 220);
+  /* Brand: warm terracotta primary, cream background, warm neutrals */
+  --background: oklch(0.98 0.008 75);
+  --foreground: oklch(0.22 0.02 45);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.18 0.02 220);
+  --card-foreground: oklch(0.22 0.02 45);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.18 0.02 220);
-  --primary: oklch(0.42 0.1 195);
-  --primary-foreground: oklch(0.98 0.004 200);
-  --secondary: oklch(0.94 0.015 195);
-  --secondary-foreground: oklch(0.3 0.06 195);
-  --muted: oklch(0.95 0.008 200);
-  --muted-foreground: oklch(0.52 0.03 210);
-  --accent: oklch(0.88 0.04 175);
-  --accent-foreground: oklch(0.25 0.08 195);
-  --destructive: oklch(0.577 0.245 27.325);
+  --popover-foreground: oklch(0.22 0.02 45);
+  --primary: oklch(0.52 0.14 35);
+  --primary-foreground: oklch(0.98 0.008 75);
+  --secondary: oklch(0.94 0.02 75);
+  --secondary-foreground: oklch(0.35 0.06 35);
+  --muted: oklch(0.95 0.01 75);
+  --muted-foreground: oklch(0.48 0.03 45);
+  --accent: oklch(0.88 0.06 50);
+  --accent-foreground: oklch(0.28 0.08 35);
+  --destructive: oklch(0.55 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.88 0.012 200);
-  --input: oklch(0.88 0.012 200);
-  --ring: oklch(0.42 0.1 195);
-  --chart-1: oklch(0.42 0.1 195);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.646 0.222 41.116);
+  --border: oklch(0.88 0.015 75);
+  --input: oklch(0.88 0.015 75);
+  --ring: oklch(0.52 0.14 35);
+  --chart-1: oklch(0.52 0.14 35);
+  --chart-2: oklch(0.6 0.12 45);
+  --chart-3: oklch(0.45 0.1 55);
+  --chart-4: oklch(0.7 0.1 65);
+  --chart-5: oklch(0.58 0.15 30);
   --radius: 0.5rem;
-  --sidebar: oklch(0.98 0.004 200);
-  --sidebar-foreground: oklch(0.18 0.02 220);
-  --sidebar-primary: oklch(0.42 0.1 195);
-  --sidebar-primary-foreground: oklch(0.98 0.004 200);
-  --sidebar-accent: oklch(0.94 0.015 195);
-  --sidebar-accent-foreground: oklch(0.3 0.06 195);
-  --sidebar-border: oklch(0.88 0.012 200);
-  --sidebar-ring: oklch(0.42 0.1 195);
+  --sidebar: oklch(0.98 0.008 75);
+  --sidebar-foreground: oklch(0.22 0.02 45);
+  --sidebar-primary: oklch(0.52 0.14 35);
+  --sidebar-primary-foreground: oklch(0.98 0.008 75);
+  --sidebar-accent: oklch(0.94 0.02 75);
+  --sidebar-accent-foreground: oklch(0.35 0.06 35);
+  --sidebar-border: oklch(0.88 0.015 75);
+  --sidebar-ring: oklch(0.52 0.14 35);
   /* Clinic-specific tokens */
-  --clinic-teal: oklch(0.42 0.1 195);
-  --clinic-teal-light: oklch(0.88 0.04 175);
-  --clinic-teal-dark: oklch(0.28 0.08 195);
-  --clinic-surface: oklch(0.96 0.008 195);
+  --clinic-primary: oklch(0.52 0.14 35);
+  --clinic-primary-light: oklch(0.88 0.06 50);
+  --clinic-primary-dark: oklch(0.38 0.12 35);
+  --clinic-surface: oklch(0.96 0.01 75);
 }
 
 .dark {
-  /* Dark mode: deep slate background, light text with teal accents */
-  --background: oklch(0.12 0.01 220);
-  --foreground: oklch(0.95 0.01 200);
-  --card: oklch(0.165 0.015 220);
-  --card-foreground: oklch(0.95 0.01 200);
-  --popover: oklch(0.165 0.015 220);
-  --popover-foreground: oklch(0.95 0.01 200);
-  --primary: oklch(0.62 0.12 195);
-  --primary-foreground: oklch(0.12 0.01 220);
-  --secondary: oklch(0.22 0.02 210);
-  --secondary-foreground: oklch(0.95 0.01 200);
-  --muted: oklch(0.3 0.015 215);
-  --muted-foreground: oklch(0.65 0.02 210);
-  --accent: oklch(0.62 0.12 195);
-  --accent-foreground: oklch(0.12 0.01 220);
-  --destructive: oklch(0.55 0.2 30);
-  --destructive-foreground: oklch(0.95 0.01 200);
-  --border: oklch(0.22 0.02 210);
-  --input: oklch(0.22 0.02 210);
-  --ring: oklch(0.62 0.12 195);
-  --chart-1: oklch(0.62 0.12 195);
-  --chart-2: oklch(0.7 0.1 190);
-  --chart-3: oklch(0.65 0.1 180);
-  --chart-4: oklch(0.68 0.1 200);
-  --chart-5: oklch(0.72 0.1 175);
-  --sidebar: oklch(0.165 0.015 220);
-  --sidebar-foreground: oklch(0.95 0.01 200);
-  --sidebar-primary: oklch(0.62 0.12 195);
-  --sidebar-primary-foreground: oklch(0.12 0.01 220);
-  --sidebar-accent: oklch(0.22 0.02 210);
-  --sidebar-accent-foreground: oklch(0.95 0.01 200);
-  --sidebar-border: oklch(0.22 0.02 210);
-  --sidebar-ring: oklch(0.62 0.12 195);
+  /* Dark mode: warm dark background, light text with terracotta accents */
+  --background: oklch(0.14 0.015 45);
+  --foreground: oklch(0.94 0.01 75);
+  --card: oklch(0.18 0.02 45);
+  --card-foreground: oklch(0.94 0.01 75);
+  --popover: oklch(0.18 0.02 45);
+  --popover-foreground: oklch(0.94 0.01 75);
+  --primary: oklch(0.65 0.14 35);
+  --primary-foreground: oklch(0.14 0.015 45);
+  --secondary: oklch(0.24 0.02 45);
+  --secondary-foreground: oklch(0.94 0.01 75);
+  --muted: oklch(0.28 0.02 45);
+  --muted-foreground: oklch(0.68 0.02 60);
+  --accent: oklch(0.65 0.14 35);
+  --accent-foreground: oklch(0.14 0.015 45);
+  --destructive: oklch(0.55 0.2 25);
+  --destructive-foreground: oklch(0.94 0.01 75);
+  --border: oklch(0.26 0.02 45);
+  --input: oklch(0.26 0.02 45);
+  --ring: oklch(0.65 0.14 35);
+  --chart-1: oklch(0.65 0.14 35);
+  --chart-2: oklch(0.7 0.12 45);
+  --chart-3: oklch(0.62 0.1 55);
+  --chart-4: oklch(0.72 0.1 65);
+  --chart-5: oklch(0.68 0.15 30);
+  --sidebar: oklch(0.18 0.02 45);
+  --sidebar-foreground: oklch(0.94 0.01 75);
+  --sidebar-primary: oklch(0.65 0.14 35);
+  --sidebar-primary-foreground: oklch(0.14 0.015 45);
+  --sidebar-accent: oklch(0.24 0.02 45);
+  --sidebar-accent-foreground: oklch(0.94 0.01 75);
+  --sidebar-border: oklch(0.26 0.02 45);
+  --sidebar-ring: oklch(0.65 0.14 35);
   /* Dark mode clinic-specific tokens */
-  --clinic-teal: oklch(0.62 0.12 195);
-  --clinic-teal-light: oklch(0.65 0.1 185);
-  --clinic-teal-dark: oklch(0.45 0.09 200);
-  --clinic-surface: oklch(0.2 0.015 215);
+  --clinic-primary: oklch(0.65 0.14 35);
+  --clinic-primary-light: oklch(0.7 0.12 45);
+  --clinic-primary-dark: oklch(0.5 0.12 35);
+  --clinic-surface: oklch(0.22 0.02 45);
 }
 
 @theme inline {
